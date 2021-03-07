@@ -1,0 +1,36 @@
+@host = http://localhost:1010/api
+
+### AUTH - Login
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+    "natId": "123456",
+    "password": "123456"
+}
+
+### AUTH - Register
+POST {{host}}/auth/register
+Content-Type: application/json
+
+{
+    "natId": "123456789123456",
+    "password": "123456",
+    "firstName": "omar",
+    "lastName": "nawit",
+    "role": "600f44d18e93d52234ad47f4"
+}
+
+### Users all
+GET {{host}}/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYXRJZCI6IjI5NDA0MDEyMTA3MjM3IiwiaWF0IjoxNjExNjE3MDI5LCJleHAiOjE2MTIyMjE4Mjl9.3NmRXT58kW49Yy-B5wJ1yJ-f0jJMOAn08nl0-WdZrT4
+
+
+### Roles - Create
+POST {{host}}/roles
+Content-Type: application/json
+
+{
+    "roleName": "User"
+}
