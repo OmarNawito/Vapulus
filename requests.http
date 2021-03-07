@@ -1,4 +1,4 @@
-@host = http://localhost:1010/api
+@host = http://localhost:2020/api
 
 ### AUTH - Login
 POST {{host}}/auth/login
